@@ -1,0 +1,382 @@
+#content {
+	width: 100%;
+	height: 100%;
+	/*
+    top      : 20%;
+    left     : 20%;*/
+	overflow: hidden;
+	position: absolute;
+	/*border   : 1px solid #ccc;*/
+}
+
+.content-wrap {
+	position: relative;
+}
+
+.content-wrap li {
+	/*background: #CAE1FF;*/
+	color: red;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+li:nth-child(2) {}
+
+li:nth-child(3) {}
+
+button {
+	width: 100px;
+	height: 50px;
+}
+
+.button {
+	position: absolute;
+	bottom: 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.charector {
+	width: 151px;
+	height: 291px;
+	background: url(../img/boy.png) 0px -291px no-repeat;
+	position: absolute;
+	left: 6%;
+	top: 55%;
+}
+
+#sun {
+	background: url(../img/sun.png) no-repeat;
+	position: absolute;
+	z-index: 1;
+	top: -30px;
+	height: 201px;
+	width: 201px;
+	right: 40%;
+}
+
+.bird {
+	position: absolute;
+	min-width: 91px;
+	min-height: 71px;
+	top: 5%;
+	z-index: 10;
+	right:-91px;
+	background: url(../img/bird.png) -182px 0px no-repeat;
+}
+
+.birdFly {
+	-moz-animation-name: bird-slow;
+	-moz-animation-duration: 400ms;
+	-moz-animation-timing-function: step-start;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-name: bird-slow;
+	-webkit-animation-duration: 400ms;
+	-webkit-animation-timing-function: step-start;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes bird-slow {
+	0% {
+		background-position: -182px 0px;
+	}
+	50% {
+		background-position: 0px 0px;
+	}
+	75% {
+		background-position: -91px 0px;
+	}
+	100% {
+		background-position: -182px 0px;
+	}
+}
+
+@-webkit-keyframes bird-slow {
+	0% {
+		background-position: -182px 0px;
+	}
+	50% {
+		background-position: 0px 0px;
+	}
+	75% {
+		background-position: -91px 0px;
+	}
+	100% {
+		background-position: -182px 0px;
+	}
+}
+
+.pausewalk {
+	/*将动画的图片切换停止*/
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+
+.slowWalk {
+	/*加入动画样式规则*/
+	-webkit-animation-name: person-slow;
+	/*执行动画的元素*/
+	-webkit-animation-duration: 950ms;
+	/*播放动画的持续时间*/
+	-webkit-animation-iteration-count: infinite;
+	/*播放动画的次数*/
+	-webkit-animation-timing-function: steps(1, start);
+	/*规定动画的速度曲线*/
+	-moz-animation-name: person-slow;
+	-moz-animation-duration: 950ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: steps(1, start);
+}
+
+.slowFlolerWalk {
+	-webkit-animation-name: person-floler-walk;
+	-webkit-animation-duration: 950ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: steps(1, start);
+	-moz-animation-name: person-floler-walk;
+	-moz-animation-duration: 950ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: steps(1, start);
+}
+
+.boyOriginal {
+     background-position: -150px -0px;
+    }
+
+@-webkit-keyframes person-slow {
+	0% {
+		background-position: -0px -291px;
+	}
+	25% {
+		background-position: -602px -0px;
+	}
+	50% {
+		background-position: -302px -291px;
+	}
+	75% {
+		background-position: -151px -291px;
+	}
+	100% {
+		background-position: -0px -291px;
+	}
+}
+
+@-moz-keyframes person-slow {
+	0% {
+		background-position: -0px -291px;
+	}
+	25% {
+		background-position: -602px -0px;
+	}
+	50% {
+		background-position: -302px -291px;
+	}
+	75% {
+		background-position: -151px -291px;
+	}
+	100% {
+		background-position: -0px -291px;
+	}
+}
+
+@-moz-keyframes person-floler-walk {
+	0% {
+		background-position: -453px -0px;
+	}
+	25% {
+		background-position: -904px -0px;
+	}
+	50% {
+		background-position: -451px -0px;
+	}
+	75% {
+		background-position: -753px -0px;
+	}
+	100% {
+		background-position: -300px -0px;
+	}
+}
+
+@-webkit-keyframes person-floler-walk {
+	0% {
+		background-position: -453px -0px;
+	}
+	25% {
+		background-position: -904px -0px;
+	}
+	50% {
+		background-position: -451px -0px;
+	}
+	75% {
+		background-position: -753px -0px;
+	}
+	100% {
+		background-position: -300px -0px;
+	}
+}
+
+.rotation {
+	-moz-animation-name: rotation;
+	-moz-animation-duration: 30s;
+	-webkit-animation-name: rotation;
+	-webkit-animation-duration: 30s;
+}
+
+@-moz-keyframes rotation {
+	0% {
+		-moz-transform: translate(0, 0);
+	}
+	100% {
+		-moz-transform: translate(-2000px, 400px);
+	}
+}
+
+@-webkit-keyframes rotation {
+	0% {
+		-webkit-transform: translate(0, 0);
+	}
+	100% {
+		-webkit-transform: translate(-2000px, 400px);
+	}
+}
+
+.cloud {
+	z-index: 2;
+	position: absolute;
+}
+
+.cloud1 {
+	background: url(../img/cloud1.png);
+	width: 181px;
+	height: 101px;
+	left: -5%;
+	top: 15%;
+}
+
+.cloud2 {
+	background: url(../img/cloud2.png);
+	width: 301px;
+	height: 140px;
+	right: 5%;
+	top: 1%;
+}
+
+.cloud1Anim {
+	-moz-animation-name: smallCloud;
+	-moz-animation-duration: 30s;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-name: smallCloud;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.cloud2Anim {
+	-moz-animation-name: largeCloud;
+	-moz-animation-duration: 60s;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-name: largeCloud;
+	-webkit-animation-duration: 60s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes smallCloud {
+	0% {
+		left: -5%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+@-webkit-keyframes smallCloud {
+	0% {
+		left: -5%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+@-moz-keyframes largeCloud {
+	0% {
+		right: 5%;
+	}
+	100% {
+		right: 100%;
+	}
+}
+
+@-webkit-keyframes largeCloud {
+	0% {
+		right: 5%;
+	}
+	100% {
+		right: 100%;
+	}
+}
+
+/*男孩转身*/
+   
+   .boy-rotate {
+       -webkit-animation-name: boy-rotate;
+       -webkit-animation-duration: 850ms;
+       -webkit-animation-iteration-count: 1;
+       -webkit-animation-timing-function: step-start;
+       -webkit-animation-fill-mode: forwards;
+       -moz-animation-name: boy-rotate;
+       -moz-animation-duration: 850ms;
+       -moz-animation-iteration-count: 1;
+       -moz-animation-timing-function: step-start;
+       -moz-animation-fill-mode: forwards;
+   }
+   
+   @-webkit-keyframes boy-rotate {
+       0% {
+           background-position: -603px -291px;
+       }
+       16.7% {
+           background-position: -150px -0px;
+       }
+       33.4% {
+           background-position: -453px -291px;
+       }
+       50.1% {
+           background-position: -0px -0px;
+       }
+       66.8% {
+           background-position: -903px -291px;
+       }
+       83.5% {
+           background-position: -753px -291px;
+       }
+       100% {
+           background-position: -603px -291px;
+       }
+   }
+   
+   @-moz-keyframes boy-rotate {
+       0% {
+           /*background-position: -603px -291px;*/
+       }
+       16.7% {
+           background-position: -150px -0px;
+       }
+       33.4% {
+           background-position: -453px -291px;
+       }
+       50.1% {
+           background-position: -0px -0px;
+       }
+       66.8% {
+           background-position: -903px -291px;
+       }
+       83.5% {
+           background-position: -753px -291px;
+       }
+       100% {
+           background-position: -603px -291px;
+       }
+   }
+
